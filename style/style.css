@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+
+}
+strong{
+    color:#22D4FD;
+}
+.parrafo{
+    color:azure;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+.titulo-blog{
+    color: blue;
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+}
+.posicion{
+    display: flex;
+    padding: 6% 20%; 
+    align-items: center;
+    gap: 82px;
+    
+    
+}
+.contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap:32px;
+    
+
+}
+.botones{
+    width: 50%;
+    padding: 16.5px 0;
+    text-align: center;
+    border-radius: 8px;
+    color: #f6f6f6;
+    border: #22D4FD solid;
+    border-width: 2px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+h2{
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.botones:hover{
+    background-color: #272727;
+    padding: 3%;
+    cursor: pointer;
+}
+.footer{
+    background-color: #22D4FD;
+
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.alias{
+    color: #272727;
+}
+.imagen__tamaño{
+    max-width: 400px;
+    width: 50%;
+    height: auto;
+    border-radius: 16px;
+    border: #22D4FD solid;
+}
+
+.imagen__tamaño:hover{
+    padding: 3%;
+}
+.header{
+    padding: 1% 0% 0% 20%;
+}
+
+.header__contenido{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    
+}
+.header__contenido__enlaces{
+    color: #22D4FD;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.header__contenido__enlaces:hover{
+    color: #007bff;
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 8% 0% 0%;
+    }
+    .header__contenido{
+        justify-content: center;
+    }
+    .posicion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .contenido{
+        width: auto;
+    }
+}
